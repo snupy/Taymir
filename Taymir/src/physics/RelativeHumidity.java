@@ -1,9 +1,7 @@
 /**
  * 
  */
-package fiziki;
-
-import utils.SimpleValue;
+package physics;
 
 /**
  *  ласс относительной влажности. ≈диница измерени€ - нет. 0 соответсвует 0%, 1
@@ -12,26 +10,12 @@ import utils.SimpleValue;
  * @author ћалик
  * 
  */
-public class RelativeHumidity implements SimpleValue<Double> {
-	private double value;
-
-	@Override
-	public Double getValue() {
-		// TODO Auto-generated method stub
-		return value;
-	}
-
-	@Override
-	public Double setValue(Double value) {
-		this.value = value;
-		return this.value;
-	}
-
+public class RelativeHumidity extends SimplePhysicsValue {
 	/**
-	 * @param value
+	 * @param value значение относительной влажности (0.0 равно 0% и 1.0 равно 100%)
 	 */
 	public RelativeHumidity(double value) {
-		this.value = value;
+		super(value);
 	}
 
 	/**

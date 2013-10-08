@@ -1,4 +1,4 @@
-package fiziki;
+package physics;
 
 /**Класс парциального давления 
  * @author Малик

@@ -5,4 +5,4 @@
  * @author Малик
  *
  */
-package fiziki;
+package physics;
